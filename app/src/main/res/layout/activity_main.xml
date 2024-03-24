@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="757dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="11dp">
+
+        <ImageView
+            android:id="@+id/connexion"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:src="@drawable/cnx"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="-12dp"
+
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/connexion"
+            android:layout_marginTop="5dp"
+            android:text="Email:"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:hint=" Votre adresse Email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:text="Mot de passe:"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="218dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="180dp"
+            android:hint="Mot de passe">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:background="@color/green"
+            android:onClick="openMain2"
+            android:text="Se connecter"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="306dp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:text="Garder ma session active"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="382dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="330dp"
+            android:text="Mot de Pass oublie?"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <ImageView
+            android:id="@+id/ou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/ou"
+            tools:layout_editor_absoluteX="-16dp"
+
+            tools:layout_editor_absoluteY="522dp"
+
+            />
+
+
+        <View
+            android:id="@+id/background_bar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:background="#D3CFCF" /> <!-- Couleur de la barre, vous pouvez remplacer par la couleur de votre choix -->
+
+        <!-- Texte au-dessus de la barre -->
+        <TextView
+            android:id="@+id/text_above_bar"
+            android:layout_width="356dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/background_bar"
+            android:layout_marginBottom="-59dp"
+            android:padding="8dp"
+            android:text="Vous navez pas encore de compte?"
+            android:textColor="#0C0C0C"
+            android:layout_marginLeft="50dp"/>
+
+
+
+        <TextView android:id="@+id/textViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inscrivez vous ici"
+            android:textSize="18sp"
+            android:textColor="#49D1E3"
+            android:clickable="true"
+            android:onClick="openSecondActivity"
+            android:layout_marginTop="725dp"
+            android:layout_marginLeft="100dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

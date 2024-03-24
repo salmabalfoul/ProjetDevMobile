@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <RelativeLayout
+        android:layout_width="386dp"
+        android:layout_height="774dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/deposer"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="56dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="130dp"
+            android:text="Titre:(*)"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+        <EditText
+            android:id="@+id/textView11"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="120dp"
+            android:hint="type here"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="categorier:(*)"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="178dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="200dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secteur"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="222dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"/>
+        <Spinner
+            android:id="@+id/sectorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="260dp"/>
+
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type de contrat:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="260dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="340dp"/>
+
+        <EditText
+            android:id="@+id/textView19"
+            android:layout_width="181dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="330dp"
+            android:hint="Type here"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="320dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="410dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="256dp"
+            android:layout_height="97dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:gravity="start|top"
+            android:hint="Enter description here"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+             />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ville"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="538dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="530dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_villes"
+            android:layout_width="240dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginLeft="80dp"
+            />
+
+        <View
+            android:id="@+id/background_bar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:background="#B8B4B4" />
+
+        <Button
+            android:id="@+id/suivant"
+            android:layout_width="106dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="665dp"
+            android:background="@color/design_default_color_secondary"
+            android:text="suivant" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Les champs(*)sont obligatoires"
+            android:layout_marginTop="750dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

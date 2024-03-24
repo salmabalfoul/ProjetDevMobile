@@ -1,0 +1,31 @@
+<resources>
+    <string-array name="villes">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Settat</item>
+        <!-- Ajoutez d'autres villes si nécessaire -->
+    </string-array>
+
+
+    <string-array name="ville">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Settat</item>
+        <!-- Ajoutez d'autres villes si nécessaire -->
+    </string-array>
+
+    <string-array name="categories">
+        <item>informatique</item>
+        <item>mecanique</item>
+        <item>mathematique</item>
+        <!-- Ajoutez d'autres catégories si nécessaire -->
+    </string-array>
+
+    <string-array name="sectors">
+        <item>developpement</item>
+        <item>base de donnees</item>
+        <item>machine</item>
+        <!-- Ajoutez d'autres secteurs si nécessaire -->
+    </string-array>
+    <string name="app_name">city</string>
+</resources>
